@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.App ::selection {
+  background-color: #df007a;
+  color: white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +40,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.presentation {
+  background: url("./images//nature.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.description {
+  padding: 5vmin;
 }
