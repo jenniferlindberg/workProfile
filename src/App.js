@@ -4,16 +4,7 @@ import Typography from "@mui/material/Typography";
 import React, { useRef } from "react";
 import { makeStyles } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({
-  pageFooter: {
-    "&::selection": {
-      // this is to refer to the prop provided by M-UI
-      backgroundColor: theme.palette.secondary.dark,
-      color: "white",
-      fontWeight: 600,
-    },
-  },
-}));
+const useStyles = makeStyles((theme) => ({}));
 
 function App() {
   const titleRef = useRef();
@@ -50,12 +41,39 @@ function App() {
           Passionate about building responsive websites
         </Typography>
       </header>
-      <div className="presentation">
+
+      <div className="container">
+        <div className="other">
+          <p>Hej</p>
+        </div>
+
+        <div className="presentation">
+          <Typography
+            color="primary.light"
+            ref={titleRef}
+            fontSize="fontSize.small"
+          >
+            Hello
+          </Typography>
+          <Typography color="primary" fontSize="fontSize.main">
+            Hello
+          </Typography>
+          <Typography color="primary.dark" fontSize="fontSize.large">
+            Hello
+          </Typography>
+
+          <Typography color="secondary.light">Hello</Typography>
+          <Typography color="secondary">Hello</Typography>
+          <Typography color="secondary.dark">Hello</Typography>
+          <button onClick={handleBackClick}>Back</button>
+        </div>
+      </div>
+
+      <div className="presentation1">
         <Typography
           color="primary.light"
           ref={titleRef}
           fontSize="fontSize.small"
-          className={classes.pageFooter}
         >
           Hello
         </Typography>

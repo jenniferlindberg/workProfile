@@ -2,6 +2,10 @@
 
 Webpage created by Jennifer Lindberg displaying personal profile and portfolio.
 
+## Design
+
+An initial prototype of the pager was created in Figma - view this [Figma Project](https://www.figma.com/file/Ki18XxwNKn6cjXzZ8BhQ80/Work-Profile?node-id=0%3A1).
+
 ## Available Scripts
 
 In the project directory, you can run:
