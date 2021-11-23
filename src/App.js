@@ -2,13 +2,13 @@ import logo from "./images/logo.png";
 import "./App.css";
 import Typography from "@mui/material/Typography";
 import React, { useRef } from "react";
-import { makeStyles } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({}));
+import SplashPage from "./pages/splash/SplashPage";
+import ProfilePage from "./pages/profile/ProfilePage";
+import PortfolioPage from "./pages/portfolio/PortfolioPage";
 
 function App() {
   const titleRef = useRef();
-  const classes = useStyles();
 
   function handleBackClick() {
     titleRef.current.scrollIntoView({ behavior: "smooth" });
@@ -41,54 +41,12 @@ function App() {
           Passionate about building responsive websites
         </Typography>
       </header>
-
-      <div className="container">
-        <div className="other">
-          <p>Hej</p>
-        </div>
-
-        <div className="presentation">
-          <Typography
-            color="primary.light"
-            ref={titleRef}
-            fontSize="fontSize.small"
-          >
-            Hello
-          </Typography>
-          <Typography color="primary" fontSize="fontSize.main">
-            Hello
-          </Typography>
-          <Typography color="primary.dark" fontSize="fontSize.large">
-            Hello
-          </Typography>
-
-          <Typography color="secondary.light">Hello</Typography>
-          <Typography color="secondary">Hello</Typography>
-          <Typography color="secondary.dark">Hello</Typography>
-          <button onClick={handleBackClick}>Back</button>
-        </div>
-      </div>
-
-      <div className="presentation1">
-        <Typography
-          color="primary.light"
-          ref={titleRef}
-          fontSize="fontSize.small"
-        >
-          Hello
-        </Typography>
-        <Typography color="primary" fontSize="fontSize.main">
-          Hello
-        </Typography>
-        <Typography color="primary.dark" fontSize="fontSize.large">
-          Hello
-        </Typography>
-
-        <Typography color="secondary.light">Hello</Typography>
-        <Typography color="secondary">Hello</Typography>
-        <Typography color="secondary.dark">Hello</Typography>
-        <button onClick={handleBackClick}>Back</button>
-      </div>
+      {/* <div className={classes.pres}>
+        <div className={classes.overlay}></div>
+      </div> */}
+      <SplashPage />
+      <ProfilePage />
+      <PortfolioPage />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import theme from "./theme";
+<link rel="preconnect" href="https://fonts.googleapis.com" />;
 
 ReactDOM.render(
   <React.StrictMode>
