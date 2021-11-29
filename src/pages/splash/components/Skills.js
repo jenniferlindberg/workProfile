@@ -58,6 +58,57 @@ const useStyles = makeStyles((theme) => ({
 const Skills = () => {
   const classes = useStyles();
 
+  const logos = [
+    {
+      link: reactImage,
+      alt: "React",
+    },
+    {
+      link: jsImage,
+      alt: "JavaScript",
+    },
+    {
+      link: nodeImage,
+      alt: "Node",
+    },
+    {
+      link: htmlImage,
+      alt: "HTML",
+    },
+    {
+      link: cssImage,
+      alt: "CSS",
+    },
+    {
+      link: pythonImage,
+      alt: "Python",
+    },
+    {
+      link: javaImage,
+      alt: "Java",
+    },
+    {
+      link: firebaseImage,
+      alt: "Firebase",
+    },
+    {
+      link: githubImage,
+      alt: "GitHub",
+    },
+    {
+      link: wordpressImage,
+      alt: "Wordpress",
+    },
+    {
+      link: mysqlImage,
+      alt: "mySQL",
+    },
+    {
+      link: figmaImage,
+      alt: "Figma",
+    },
+  ];
+
   return (
     <div className={classes.pres}>
       <div className={classes.overlay}>
@@ -67,18 +118,14 @@ const Skills = () => {
 
         {/* TODO: 1. remove code duplication by creating list instead. 2. Add alt for each image. */}
         <div className={classes.logos}>
-          <img src={reactImage} className={classes.logo} />
-          <img src={jsImage} className={classes.logo} />
-          <img src={nodeImage} className={classes.logo} />
-          <img src={htmlImage} className={classes.logo} />
-          <img src={cssImage} className={classes.logo} />
-          <img src={pythonImage} className={classes.logo} />
-          <img src={javaImage} className={classes.logo} />
-          <img src={firebaseImage} className={classes.logo} />
-          <img src={githubImage} className={classes.logo} />
-          <img src={wordpressImage} className={classes.logo} />
-          <img src={mysqlImage} className={classes.logo} />
-          <img src={figmaImage} className={classes.logo} />
+          {logos.map((l) => (
+            <img
+              src={l.link}
+              alt={l.alt}
+              className={classes.logo}
+              key={l.alt}
+            />
+          ))}
         </div>
       </div>
     </div>

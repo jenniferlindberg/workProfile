@@ -32,9 +32,52 @@ const useStyles = makeStyles((theme) => ({
 
 const Portfolio = () => {
   const classes = useStyles();
-  const happy = () => {
-    console.log("happy");
-  };
+
+  const projects = [
+    {
+      name: "project1",
+      description: "project 1 cool",
+      link: "coollink",
+      image: "wow.png",
+    },
+    {
+      name: "project1",
+      description: "project 1 cool",
+      link: "coollink",
+      image: "wow.png",
+    },
+    {
+      name: "project1",
+      description: "project 1 cool",
+      link: "coollink",
+      image: "wow.png",
+    },
+    {
+      name: "project1",
+      description: "project 1 cool",
+      link: "coollink",
+      image: "wow.png",
+    },
+    {
+      name: "project1",
+      description: "project 1 cool",
+      link: "coollink",
+      image: "wow.png",
+    },
+    {
+      name: "project1",
+      description: "project 1 cool",
+      link: "coollink",
+      image: "wow.png",
+    },
+    {
+      name: "project1",
+      description: "project 1 cool",
+      link: "coollink",
+      image: "wow.png",
+    },
+  ];
+
   return (
     <div className={classes.portfolioContainer}>
       <div className={classes.rectangleContainer}>
@@ -44,27 +87,11 @@ const Portfolio = () => {
       </div>
 
       <div className="gallery">
-        <div className="item">
-          <div className="item-content">Project 1</div>
-        </div>
-        <div className="item">
-          <div className="item-content">Project 2</div>
-        </div>
-        <div className="item">
-          <div className="item-content">Project 3</div>
-        </div>
-        <div className="item">
-          <div className="item-content">Project 4</div>
-        </div>
-        <div className="item">
-          <div className="item-content">Project 5</div>
-        </div>
-        <div className="item">
-          <div className="item-content">Project 6</div>
-        </div>
-        <div className="item">
-          <div className="item-content">Project 7</div>
-        </div>
+        {projects.map((p) => (
+          <div className="item" key={p.name}>
+            <div className="item-content">{p.name}</div>
+          </div>
+        ))}
       </div>
     </div>
   );
