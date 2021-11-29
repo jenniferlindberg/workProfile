@@ -1,0 +1,55 @@
+.gallery {
+  display: grid;
+  gap: 0.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+.gallery .item {
+  background-image: url("../../../images/projects/pig.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.gallery .item .item-content {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  background-color: rgba(250, 25, 148, 0.8);
+  transition: opacity 0.25s;
+}
+
+.gallery .item:hover .item-content {
+  opacity: 1;
+}
+
+/* .gallery .item::after {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: opacity 0.25s;
+}
+
+.gallery .item:hover::after {
+  opacity: 1;
+} */
+
+.gallery .item .gallery .item:hover {
+  cursor: pointer;
+  background: rgba(39, 62, 84, 0.2);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}

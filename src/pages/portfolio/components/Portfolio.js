@@ -1,7 +1,13 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
+import proj1Image from "../../../images/projects/proj1.jpg";
+import pigImage from "../../../images/projects/pig.jpg";
+import blossomImage from "../../../images/projects/blossom.jpg";
+import starsImage from "../../../images/projects/stars.jpg";
 
 import { makeStyles } from "@material-ui/core";
+
+import "./Portfolio.css";
 
 const useStyles = makeStyles((theme) => ({
   portfolioContainer: {
@@ -26,11 +32,38 @@ const useStyles = makeStyles((theme) => ({
 
 const Portfolio = () => {
   const classes = useStyles();
+  const happy = () => {
+    console.log("happy");
+  };
   return (
     <div className={classes.portfolioContainer}>
       <div className={classes.rectangleContainer}>
         <div className={classes.rectangle}>
           <Typography fontSize="fontSize.medium">PORTFOLIO</Typography>
+        </div>
+      </div>
+
+      <div className="gallery">
+        <div className="item">
+          <div className="item-content">Project 1</div>
+        </div>
+        <div className="item">
+          <div className="item-content">Project 2</div>
+        </div>
+        <div className="item">
+          <div className="item-content">Project 3</div>
+        </div>
+        <div className="item">
+          <div className="item-content">Project 4</div>
+        </div>
+        <div className="item">
+          <div className="item-content">Project 5</div>
+        </div>
+        <div className="item">
+          <div className="item-content">Project 6</div>
+        </div>
+        <div className="item">
+          <div className="item-content">Project 7</div>
         </div>
       </div>
     </div>

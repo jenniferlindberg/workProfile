@@ -45,8 +45,6 @@ function App() {
         <div className={classes.overlay}></div>
       </div> */}
       <SplashPage />
-      <ProfilePage />
-      <PortfolioPage />
     </div>
   );
 }
