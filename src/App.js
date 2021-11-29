@@ -10,6 +10,8 @@ import PortfolioPage from "./pages/portfolio/PortfolioPage";
 function App() {
   const titleRef = useRef();
 
+  console.log("Miljö", process.env.REACT_APP_SECRET);
+
   function handleBackClick() {
     titleRef.current.scrollIntoView({ behavior: "smooth" });
   }
