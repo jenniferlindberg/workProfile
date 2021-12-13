@@ -10,6 +10,8 @@ import PortfolioPage from "./pages/portfolio/PortfolioPage";
 function App() {
   const titleRef = useRef();
 
+  console.log("Miljö", process.env.REACT_APP_SECRET);
+
   function handleBackClick() {
     titleRef.current.scrollIntoView({ behavior: "smooth" });
   }
@@ -38,13 +40,13 @@ function App() {
           sx={{ letterSpacing: 4 }}
           className="description"
         >
-          Passionate about building responsive websites
+          Passionate about building websites
         </Typography>
       </header>
       {/* <div className={classes.pres}>
         <div className={classes.overlay}></div>
       </div> */}
-      <SplashPage />
+      {/* <SplashPage /> */}
     </div>
   );
 }
