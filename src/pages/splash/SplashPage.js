@@ -9,10 +9,10 @@ const SplashPage = () => {
   return (
     <div>
       <Skills />
-      <Profile />
+      {/* <Profile />
       <Portfolio />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

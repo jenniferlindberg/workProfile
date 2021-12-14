@@ -29,7 +29,7 @@ function App() {
         </Typography>
         <Typography
           fontSize="fontSize"
-          fontFamily="fontFamily.georgia"
+          fontFamily="fontFamily.eorgia"
           sx={{ letterSpacing: 6 }}
         >
           Software Engineer
@@ -46,7 +46,7 @@ function App() {
       {/* <div className={classes.pres}>
         <div className={classes.overlay}></div>
       </div> */}
-      {/* <SplashPage /> */}
+      <SplashPage />
     </div>
   );
 }
